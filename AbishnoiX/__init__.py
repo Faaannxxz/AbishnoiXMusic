@@ -1,8 +1,8 @@
-from AnonX.core.bot import AnonXBot
-from AnonX.core.dir import dirr
-from AnonX.core.git import git
-from AnonX.core.userbot import Userbot
-from AnonX.misc import dbb, heroku, sudo
+from AbishnoiX.core.bot import AbishnoiXBot
+from AbishnoiX.core.dir import dirr
+from AbishnoiX.core.git import git
+from AbishnoiX.core.userbot import Userbot
+from AbishnoiX.misc import dbb, heroku, sudo
 from aiohttp import ClientSession
 
 from .logging import LOGGER
@@ -23,7 +23,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = AnonXBot()
+app = AbishnoiXBot()
 
 # Assistant Client
 userbot = Userbot()

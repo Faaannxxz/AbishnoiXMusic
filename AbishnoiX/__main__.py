@@ -7,10 +7,10 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS
-from AnonX import LOGGER, app, userbot
-from AnonX.core.call import Anon
-from AnonX.plugins import ALL_MODULES
-from AnonX.utils.database import get_banned_users, get_gbanned
+from AbishnoiX import LOGGER, app, userbot
+from AbishnoiX.core.call import Anon
+from AbishnoiX.plugins import ALL_MODULES
+from AbishnoiX.utils.database import get_banned_users, get_gbanned
 
 loop = asyncio.get_event_loop()
 
@@ -23,7 +23,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("AnonX").error(
+        LOGGER("AbishnoiX").error(
             "WTF Baby ! Atleast add a pyrogram string, How Cheap..."
         )
         return
@@ -31,7 +31,7 @@ async def init():
         not config.SPOTIFY_CLIENT_ID
         and not config.SPOTIFY_CLIENT_SECRET
     ):
-        LOGGER("AnonX").warning(
+        LOGGER("AbishnoiX").warning(
             "Spotify Client Id & Secret not added, Chutiya Saala ek itni simple cheej nahi laa paaya."
         )
     try:
@@ -45,8 +45,8 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("AnonX.plugins" + all_module)
-    LOGGER("AnonX.plugins").info(
+        importlib.import_module("AbishnoiX.plugins" + all_module)
+    LOGGER("AbishnoiX.plugins").info(
         "Necessary Modules Imported Successfully."
     )
     await userbot.start()
@@ -56,17 +56,17 @@ async def init():
             "https://telegra.ph/file/8d5db123638c2f6bb6ce4.mp4"
         )
     except NoActiveGroupCall:
-        LOGGER("AnonX").error(
+        LOGGER("AbishnoiX").error(
             "[ERROR] - \n\nHey Baby, firstly open telegram and turn on voice chat in Logger Group else fu*k off. If you ever ended voice chat in log group i will stop working and users will fu*k you up."
         )
         sys.exit()
     except:
         pass
     await Anon.decorators()
-    LOGGER("AnonX").info("Music Bot Started Successfully, Now Gib your girlfriend chumt to @anonymous_was_bot")
+    LOGGER("AbishnoiX").info("Music Bot Started Successfully, Now Gib your girlfriend chumt to @Abishnoi1M")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("AnonX").info("Stopping Music Bot, Bhakk Bhosdike (Gaand Maraa Tu)")
+    LOGGER("AbishnoiX").info("Stopping Music Bot, Bhakk Bhosdike (Gaand Maraa Tu)")
