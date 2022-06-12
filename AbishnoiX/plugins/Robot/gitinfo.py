@@ -1,6 +1,6 @@
 import aiohttp
 from pyrogram import filters
-from AnonX import app
+from AbishnoiX import app
 
 
 @app.on_message(filters.command(["github", "git"]))
