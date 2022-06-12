@@ -15,13 +15,13 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from AnonX import app
-from AnonX.misc import HAPP, SUDOERS, XCB
-from AnonX.utils.database import (get_active_chats,
+from AbishnoiX import app
+from AbishnoiX.misc import HAPP, SUDOERS, XCB
+from AbishnoiX.utils.database import (get_active_chats,
                                        remove_active_chat,
                                        remove_active_video_chat)
-from AnonX.utils.decorators.language import language
-from AnonX.utils.pastebin import Anonbin
+from AbishnoiX.utils.decorators.language import language
+from AbishnoiX.utils.pastebin import Anonbin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")

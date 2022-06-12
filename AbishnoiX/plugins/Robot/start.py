@@ -9,18 +9,18 @@ import config
 from config import BANNED_USERS
 from config.config import OWNER_ID
 from strings import get_command, get_string
-from AnonX import Telegram, YouTube, app
-from AnonX.misc import SUDOERS
-from AnonX.plugins.Robot.playlist import del_plist_msg
-from AnonX.plugins.Robot.sudoers import sudoers_list
-from AnonX.utils.database import (add_served_chat,
+from AbishnoiX import Telegram, YouTube, app
+from AbishnoiX.misc import SUDOERS
+from AbishnoiX.plugins.Robot.playlist import del_plist_msg
+from AbishnoiX.plugins.Robot.sudoers import sudoers_list
+from AbishnoiX.utils.database import (add_served_chat,
                                        add_served_user,
                                        blacklisted_chats,
                                        get_assistant, get_lang,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
-from AnonX.utils.decorators.language import LanguageStart
-from AnonX.utils.inline import (help_pannel, private_panel,
+from AbishnoiX.utils.decorators.language import LanguageStart
+from AbishnoiX.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 loop = asyncio.get_running_loop()

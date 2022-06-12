@@ -12,17 +12,17 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
-from AnonX import YouTube, app
-from AnonX.core.userbot import assistants
-from AnonX.misc import SUDOERS, pymongodb
-from AnonX.plugins import ALL_MODULES
-from AnonX.utils.database import (get_global_tops,
+from AbishnoiX import YouTube, app
+from AbishnoiX.core.userbot import assistants
+from AbishnoiX.misc import SUDOERS, pymongodb
+from AbishnoiX.plugins import ALL_MODULES
+from AbishnoiX.utils.database import (get_global_tops,
                                        get_particulars, get_queries,
                                        get_served_chats,
                                        get_served_users, get_sudoers,
                                        get_top_chats, get_topp_users)
-from AnonX.utils.decorators.language import language, languageCB
-from AnonX.utils.inline.stats import (back_stats_buttons,
+from AbishnoiX.utils.decorators.language import language, languageCB
+from AbishnoiX.utils.inline.stats import (back_stats_buttons,
                                            back_stats_markup,
                                            get_stats_markup,
                                            overallback_stats_markup,
