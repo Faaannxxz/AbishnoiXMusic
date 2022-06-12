@@ -1,9 +1,13 @@
 
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+</h3>
 
-## 🏓 Heroku Deployment
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/KingAbishnoi/AbishnoiXMusic"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-<h4>Click the button below to deploy Ramdi on Heroku!</h4>    
-<a href="https://dashboard.heroku.com/new?template=https://github.com/KingAbishnoi/AbishnoiXMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
+
+
+
 
 
  
@@ -13,6 +17,9 @@
 
 <p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/KingAbishnoi/AbishnoiXMusic"><img src="https://img.shields.io/badge/Deploy%20On%20Okteto-black?style=for-the-badge&logo=Okteto" width="220" height="38.45"/></a></p>
 
+  
+  
+  
   
   
   
