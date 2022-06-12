@@ -77,7 +77,7 @@ class Userbot(Client):
                 sys.exit()
             try:
                 await self.one.send_message(
-                    -1001686672798, f"**» sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇᴩʟᴏʏᴇᴅ ᴀʙɪsʜɴᴏɪ ダ ᴍᴜsɪᴄ.\n\n💫 **ᴏᴡɴᴇʀ ɪᴅ :** {config.OWNER_ID}"
+                    -1001376267876, f"**» sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇᴩʟᴏʏᴇᴅ ᴀʙɪsʜɴᴏɪ ダ ᴍᴜsɪᴄ.\n\n💫 **ᴏᴡɴᴇʀ ɪᴅ :** {config.OWNER_ID}"
                 )
             except:
                 LOGGER(__name__).error(
