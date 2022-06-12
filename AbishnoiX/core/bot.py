@@ -8,11 +8,11 @@ from ..logging import LOGGER
 
 
 
-class AnonXBot(Client):
+class AbishnoiXBot(Client):
     def __init__(self):
         LOGGER(__name__).info(f"Starting Bot...")
         super().__init__(
-            "AnonXMusic",
+            "AbishnoiXMusic",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
@@ -25,7 +25,7 @@ class AnonXBot(Client):
         self.id = get_me.id
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "**» ᴀɴᴏɴ ダᴍᴜsɪᴄ ʙᴏᴛ sᴛᴀʀᴛᴇᴅ...**"
+                config.LOG_GROUP_ID, "**» ᴀʙɪsʜɴᴏɪ ダᴍᴜsɪᴄ ʙᴏᴛ sᴛᴀʀᴛᴇᴅ...**"
             )
         except:
             LOGGER(__name__).error(
