@@ -107,7 +107,12 @@
         "description": "Link of your telegram channel.",
         "value": "https://t.me/Abishnoi_bots",
         "required": false
-      }
+      },
+        "UPSTREAM_BRANCH": {
+            "description": "branch dal na bs*k.",
+             "value": "main",
+             "required": true
+       }
     },
     "buildpacks": [
           {
