@@ -75,15 +75,6 @@ class Userbot(Client):
                     f"Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin ! "
                 )
                 sys.exit()
-            try:
-                await self.one.send_message(
-                    -1001376267876, f"**» sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇᴩʟᴏʏᴇᴅ ᴀʙɪsʜɴᴏɪ ダ ᴍᴜsɪᴄ.\n\n💫 **ᴏᴡɴᴇʀ ɪᴅ :** {config.OWNER_ID}"
-                )
-            except:
-                LOGGER(__name__).error(
-                    f"Assistant Account 1 has failed to access the developer's group !\n Please contact @anonymous_was_bot ASAP."
-                )
-                sys.exit()
         if config.STRING2:
             await self.two.start()
             try:
