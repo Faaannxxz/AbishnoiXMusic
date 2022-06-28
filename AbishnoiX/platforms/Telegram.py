@@ -1,3 +1,4 @@
+
 import asyncio
 import os
 import time
@@ -47,16 +48,16 @@ class TeleAPI:
             file_name = file.file_name
             if file_name is None:
                 file_name = (
-                    "ᴛᴇʟᴇɢʀᴀᴍ ᴀᴜᴅɪᴏ"
+                    "Telegram Audio File"
                     if audio
-                    else "ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴅᴇᴏ"
+                    else "Telegram Video File"
                 )
 
         except:
             file_name = (
-                "ᴛᴇʟᴇɢʀᴀᴍ ᴀᴜᴅɪᴏ"
+                "Telegram Audio File"
                 if audio
-                else "ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴅᴇᴏ"
+                else "Telegram Video File"
             )
         return file_name
 
@@ -119,7 +120,7 @@ class TeleAPI:
                     [
                         [
                             InlineKeyboardButton(
-                                text="↻ ᴄᴀɴᴄᴇʟ ↺",
+                                text="🚦 Cancel Downloading",
                                 callback_data="stop_downloading",
                             ),
                         ]
@@ -138,14 +139,14 @@ class TeleAPI:
                     completed_size = convert_bytes(current)
                     speed = convert_bytes(speed)
                     text = f"""
-**{MUSIC_BOT_NAME} ᴍᴇᴅɪᴀ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ**
+**{MUSIC_BOT_NAME} Telegram Media Downloader**
 
-**sɪᴢᴇ :** {total_size}
-**ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ :** {completed_size} 
-**ᴩᴇʀᴄᴇɴᴛᴀɢᴇ :** {percentage[:5]}%
+**Total FileSize:** {total_size}
+**Completed:** {completed_size} 
+**Percentage:** {percentage[:5]}%
 
-**sᴩᴇᴇᴅ :** {speed}/s
-**ᴇᴛᴀ :** {eta}"""
+**Speed:** {speed}/s
+**ETA:** {eta}"""
                     try:
                         await mystic.edit_text(text, reply_markup=upl)
                     except:
@@ -164,7 +165,7 @@ class TeleAPI:
                     progress=progress,
                 )
                 await mystic.edit_text(
-                    "**ғɪʟᴇ sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ.\n\n ᴩʀᴏᴄᴇssɪɴɢ...**"
+                    "Successfully Downloaded.. Processing file now"
                 )
                 downloader.pop(message.message_id)
             except:
