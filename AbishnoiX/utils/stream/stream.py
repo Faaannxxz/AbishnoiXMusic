@@ -1,3 +1,5 @@
+
+
 import os
 from random import randint
 from typing import Union
@@ -6,7 +8,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from AbishnoiX import Carbon, YouTube, app
-from AbishnoiX.core.call import Anon
+from AbishnoiX.core.call import AbishnoiX
 from AbishnoiX.misc import db
 from AbishnoiX.utils.database import (add_active_chat,
                                        add_active_video_chat,
@@ -16,7 +18,7 @@ from AbishnoiX.utils.exceptions import AssistantErr
 from AbishnoiX.utils.inline.play import (stream_markup,
                                           telegram_markup)
 from AbishnoiX.utils.inline.playlist import close_markup
-from AbishnoiX.utils.pastebin import Anonbin
+from AbishnoiX.utils.pastebin import AbishnoiXbin
 from AbishnoiX.utils.stream.queue import put_queue, put_queue_index
 from AbishnoiX.utils.thumbnails import gen_thumb
 
@@ -40,7 +42,7 @@ async def stream(
         if not await is_video_allowed(chat_id):
             raise AssistantErr(_["play_7"])
     if forceplay:
-        await Anon.force_stop_stream(chat_id)
+        await AbishnoiX.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['playlist_16']}\n\n"
         count = 0
@@ -89,7 +91,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_16"])
-                await Anon.join_call(
+                await AbishnoiX.join_call(
                     chat_id, original_chat_id, file_path, video=status
                 )
                 await put_queue(
@@ -120,7 +122,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await Anonbin(msg)
+            link = await AbishnoiXbin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -170,7 +172,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anon.join_call(
+            await AbishnoiX.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -224,7 +226,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anon.join_call(
+            await AbishnoiX.join_call(
                 chat_id, original_chat_id, file_path, video=None
             )
             await put_queue(
@@ -278,7 +280,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anon.join_call(
+            await AbishnoiX.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -339,7 +341,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Anon.join_call(
+            await AbishnoiX.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -391,7 +393,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anon.join_call(
+            await AbishnoiX.join_call(
                 chat_id,
                 original_chat_id,
                 link,
