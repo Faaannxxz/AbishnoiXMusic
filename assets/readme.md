@@ -1,58 +1,58 @@
-## Yukki Assets Folder
+# ғᴏʟᴅᴇʀ
 
-# Contains all the fonts and thumb related files.
+# ᴄᴏɴᴛᴀɪɴs ᴀʟʟ ᴛʜᴇ ғᴏɴᴛs ᴀɴᴅ ᴛʜᴜᴍʙ ʀᴇʟᴀᴛᴇᴅ ғɪʟᴇs.
 
-```console
-font.ttf & font2.ttf - Font File for Thumbnails Generation
+```ᴄᴏɴsᴏʟᴇ
+ғᴏɴᴛ.ᴛᴛғ & ғᴏɴᴛ2.ᴛᴛғ - ғᴏɴᴛ ғɪʟᴇ ғᴏʀ ᴛʜᴜᴍʙɴᴀɪʟs ɢᴇɴᴇʀᴀᴛɪᴏɴ
 ```
-- > If you want can change your font for thumbnails , change these files from here.
+- > ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴄᴀɴ ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ғᴏɴᴛ ғᴏʀ ᴛʜᴜᴍʙɴᴀɪʟs , ᴄʜᴀɴɢᴇ ᴛʜᴇsᴇ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ.
 
-```console
-Audio.jpeg - Thumbnail Image to be send when someone plays Audio files from telegram.
+```ᴄᴏɴsᴏʟᴇ
+ᴀᴜᴅɪᴏ.ᴊᴘᴇɢ - ᴛʜᴜᴍʙɴᴀɪʟ ɪᴍᴀɢᴇ ᴛᴏ ʙᴇ sᴇɴᴅ ᴡʜᴇɴ sᴏᴍᴇᴏɴᴇ ᴘʟᴀʏs ᴀᴜᴅɪᴏ ғɪʟᴇs ғʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ.
 ```
-- > If you want to change thumb images, make sure your name file "Audio.jpeg" remains same or alternatively you can add a var <br><br> `TELEGRAM_AUDIO_URL` - Use telegraph link
+- > ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴜᴍʙ ɪᴍᴀɢᴇs, ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜʀ ɴᴀᴍᴇ ғɪʟᴇ "ᴀᴜᴅɪᴏ.ᴊᴘᴇɢ" ʀᴇᴍᴀɪɴs sᴀᴍᴇ ᴏʀ ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇʟʏ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴠᴀʀ <ʙʀ><ʙʀ> `ᴛᴇʟᴇɢʀᴀᴍ_ᴀᴜᴅɪᴏ_ᴜʀʟ` - ᴜsᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ
 
 
-```console
-Video.jpeg - Thumbnail Image to be send when someone plays Video files from telegram.
+```ᴄᴏɴsᴏʟᴇ
+ᴠɪᴅᴇᴏ.ᴊᴘᴇɢ - ᴛʜᴜᴍʙɴᴀɪʟ ɪᴍᴀɢᴇ ᴛᴏ ʙᴇ sᴇɴᴅ ᴡʜᴇɴ sᴏᴍᴇᴏɴᴇ ᴘʟᴀʏs ᴠɪᴅᴇᴏ ғɪʟᴇs ғʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ.
 ```
-- > If you want to change thumb images, make sure your file name "Video.jpeg" remains same or alternatively you can add a var <br><br> `TELEGRAM_VIDEO_URL` - Use telegraph link
+- > ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴜᴍʙ ɪᴍᴀɢᴇs, ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜʀ ғɪʟᴇ ɴᴀᴍᴇ "ᴠɪᴅᴇᴏ.ᴊᴘᴇɢ" ʀᴇᴍᴀɪɴs sᴀᴍᴇ ᴏʀ ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇʟʏ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴠᴀʀ <ʙʀ><ʙʀ> `ᴛᴇʟᴇɢʀᴀᴍ_ᴠɪᴅᴇᴏ_ᴜʀʟ` - ᴜsᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ
 
 
-```console
-Stream.jpeg - Thumbnail Image to be send when someone plays M3u8 or live links on music bot.
+```ᴄᴏɴsᴏʟᴇ
+sᴛʀᴇᴀᴍ.ᴊᴘᴇɢ - ᴛʜᴜᴍʙɴᴀɪʟ ɪᴍᴀɢᴇ ᴛᴏ ʙᴇ sᴇɴᴅ ᴡʜᴇɴ sᴏᴍᴇᴏɴᴇ ᴘʟᴀʏs ᴍ3ᴜ8 ᴏʀ ʟɪᴠᴇ ʟɪɴᴋs ᴏɴ ᴍᴜsɪᴄ ʙᴏᴛ.
 ```
-- > If you want to change thumb images, make sure your file name "Stream.jpeg" remains same or alternatively you can add a var <br><br> `STREAM_IMG_URL` - Use telegraph link
+- > ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴜᴍʙ ɪᴍᴀɢᴇs, ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜʀ ғɪʟᴇ ɴᴀᴍᴇ "sᴛʀᴇᴀᴍ.ᴊᴘᴇɢ" ʀᴇᴍᴀɪɴs sᴀᴍᴇ ᴏʀ ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇʟʏ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴠᴀʀ <ʙʀ><ʙʀ> `sᴛʀᴇᴀᴍ_ɪᴍɢ_ᴜʀʟ` - ᴜsᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ
 
-```console
-Soundcloud.jpeg - Thumbnail Image to be when send someone plays music from soundcloud.
+```ᴄᴏɴsᴏʟᴇ
+sᴏᴜɴᴅᴄʟᴏᴜᴅ.ᴊᴘᴇɢ - ᴛʜᴜᴍʙɴᴀɪʟ ɪᴍᴀɢᴇ ᴛᴏ ʙᴇ ᴡʜᴇɴ sᴇɴᴅ sᴏᴍᴇᴏɴᴇ ᴘʟᴀʏs ᴍᴜsɪᴄ ғʀᴏᴍ sᴏᴜɴᴅᴄʟᴏᴜᴅ.
 ```
-- > If you want to change thumb images, make sure your file name "Soundcloud.jpeg" remains same or alternatively you can add a var <br><br> `SOUNCLOUD_IMG_URL` - Use telegraph link
+- > ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴜᴍʙ ɪᴍᴀɢᴇs, ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜʀ ғɪʟᴇ ɴᴀᴍᴇ "sᴏᴜɴᴅᴄʟᴏᴜᴅ.ᴊᴘᴇɢ" ʀᴇᴍᴀɪɴs sᴀᴍᴇ ᴏʀ ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇʟʏ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴠᴀʀ <ʙʀ><ʙʀ> `sᴏᴜɴᴄʟᴏᴜᴅ_ɪᴍɢ_ᴜʀʟ` - ᴜsᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ
 
-```console
-Youtube.jpeg - If Thumbnail Generator fails anyhow then bot will send this image
+```ᴄᴏɴsᴏʟᴇ
+ʏᴏᴜᴛᴜʙᴇ.ᴊᴘᴇɢ - ɪғ ᴛʜᴜᴍʙɴᴀɪʟ ɢᴇɴᴇʀᴀᴛᴏʀ ғᴀɪʟs ᴀɴʏʜᴏᴡ ᴛʜᴇɴ ʙᴏᴛ ᴡɪʟʟ sᴇɴᴅ ᴛʜɪs ɪᴍᴀɢᴇ
 ```
-- > If you want to change thumb images, make sure your file name "Youtube.jpeg" remains same or alternatively you can add a var <br><br> `YOUTUBE_IMG_URL` - Use telegraph link
+- > ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴜᴍʙ ɪᴍᴀɢᴇs, ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜʀ ғɪʟᴇ ɴᴀᴍᴇ "ʏᴏᴜᴛᴜʙᴇ.ᴊᴘᴇɢ" ʀᴇᴍᴀɪɴs sᴀᴍᴇ ᴏʀ ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇʟʏ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴠᴀʀ <ʙʀ><ʙʀ> `ʏᴏᴜᴛᴜʙᴇ_ɪᴍɢ_ᴜʀʟ` - ᴜsᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ
 
-```console
-Ping.jpeg - This image is going to be used by /ping command
+```ᴄᴏɴsᴏʟᴇ
+ᴘɪɴɢ.ᴊᴘᴇɢ - ᴛʜɪs ɪᴍᴀɢᴇ ɪs ɢᴏɪɴɢ ᴛᴏ ʙᴇ ᴜsᴇᴅ ʙʏ /ᴘɪɴɢ ᴄᴏᴍᴍᴀɴᴅ
 ```
-- > If you want to change ping image, make sure your file name "Ping.jpeg" remains same or alternatively you can add a var <br><br> `PING_IMG_URL` - Use telegraph link
+- > ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘɪɴɢ ɪᴍᴀɢᴇ, ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜʀ ғɪʟᴇ ɴᴀᴍᴇ "ᴘɪɴɢ.ᴊᴘᴇɢ" ʀᴇᴍᴀɪɴs sᴀᴍᴇ ᴏʀ ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇʟʏ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴠᴀʀ <ʙʀ><ʙʀ> `ᴘɪɴɢ_ɪᴍɢ_ᴜʀʟ` - ᴜsᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ
 
 
-```console
-Playlist.jpeg - This image is going to be used by /play command
+```ᴄᴏɴsᴏʟᴇ
+ᴘʟᴀʏʟɪsᴛ.ᴊᴘᴇɢ - ᴛʜɪs ɪᴍᴀɢᴇ ɪs ɢᴏɪɴɢ ᴛᴏ ʙᴇ ᴜsᴇᴅ ʙʏ /ᴘʟᴀʏ ᴄᴏᴍᴍᴀɴᴅ
 ```
-- > If you want to change playlist image, make sure your file name "Playlist.jpeg" remains same or alternatively you can add a var <br><br> `PLAYLIST_IMG_URL` - Use telegraph link
+- > ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴘʟᴀʏʟɪsᴛ ɪᴍᴀɢᴇ, ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜʀ ғɪʟᴇ ɴᴀᴍᴇ "ᴘʟᴀʏʟɪsᴛ.ᴊᴘᴇɢ" ʀᴇᴍᴀɪɴs sᴀᴍᴇ ᴏʀ ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇʟʏ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴠᴀʀ <ʙʀ><ʙʀ> `ᴘʟᴀʏʟɪsᴛ_ɪᴍɢ_ᴜʀʟ` - ᴜsᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ
 
 
-```console
-Global.jpeg and Stats.jpeg - This image is going to be used by /stats command
+```ᴄᴏɴsᴏʟᴇ
+ɢʟᴏʙᴀʟ.ᴊᴘᴇɢ ᴀɴᴅ sᴛᴀᴛs.ᴊᴘᴇɢ - ᴛʜɪs ɪᴍᴀɢᴇ ɪs ɢᴏɪɴɢ ᴛᴏ ʙᴇ ᴜsᴇᴅ ʙʏ /sᴛᴀᴛs ᴄᴏᴍᴍᴀɴᴅ
 ```
-- > If you want to change stats images, make sure your file name "Global.jpeg" or "Stats.jpeg" remains same or alternatively you can add a var <br><br> `GLOBAL_IMG_URL` - Use telegraph link<br> `STATS_IMG_URL` - Use telegraph link
+- > ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ sᴛᴀᴛs ɪᴍᴀɢᴇs, ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜʀ ғɪʟᴇ ɴᴀᴍᴇ "ɢʟᴏʙᴀʟ.ᴊᴘᴇɢ" ᴏʀ "sᴛᴀᴛs.ᴊᴘᴇɢ" ʀᴇᴍᴀɪɴs sᴀᴍᴇ ᴏʀ ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇʟʏ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴠᴀʀ <ʙʀ><ʙʀ> `ɢʟᴏʙᴀʟ_ɪᴍɢ_ᴜʀʟ` - ᴜsᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ<ʙʀ> `sᴛᴀᴛs_ɪᴍɢ_ᴜʀʟ` - ᴜsᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ
 
 
-```console
-SpotifyAlbum.jpeg , SpotifyArtist.jpeg and SpotifyPlaylist.jpeg - This image is going to be used by spotify inline command
+```ᴄᴏɴsᴏʟᴇ
+sᴘᴏᴛɪғʏᴀʟʙᴜᴍ.ᴊᴘᴇɢ , sᴘᴏᴛɪғʏᴀʀᴛɪsᴛ.ᴊᴘᴇɢ ᴀɴᴅ sᴘᴏᴛɪғʏᴘʟᴀʏʟɪsᴛ.ᴊᴘᴇɢ - ᴛʜɪs ɪᴍᴀɢᴇ ɪs ɢᴏɪɴɢ ᴛᴏ ʙᴇ ᴜsᴇᴅ ʙʏ sᴘᴏᴛɪғʏ ɪɴʟɪɴᴇ ᴄᴏᴍᴍᴀɴᴅ
 ```
-- > If you want to change stats images, make sure your file name "SpotifyAlbum.jpeg", "SpotifyPlaylist.jpeg" or "SpotifyArtist.jpeg" remains same or alternatively you can add a var <br><br> `SPOTIFY_ARTIST_IMG_URL` - Use telegraph link<br> `SPOTIFY_ALBUM_IMG_URL` - Use telegraph link<br> `SPOTIFY_PLAYLIST_IMG_URL` - Use telegraph link
+- > ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ sᴛᴀᴛs ɪᴍᴀɢᴇs, ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜʀ ғɪʟᴇ ɴᴀᴍᴇ "sᴘᴏᴛɪғʏᴀʟʙᴜᴍ.ᴊᴘᴇɢ", "sᴘᴏᴛɪғʏᴘʟᴀʏʟɪsᴛ.ᴊᴘᴇɢ" ᴏʀ "sᴘᴏᴛɪғʏᴀʀᴛɪsᴛ.ᴊᴘᴇɢ" ʀᴇᴍᴀɪɴs sᴀᴍᴇ ᴏʀ ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇʟʏ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴠᴀʀ <ʙʀ><ʙʀ> `sᴘᴏᴛɪғʏ_ᴀʀᴛɪsᴛ_ɪᴍɢ_ᴜʀʟ` - ᴜsᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ<ʙʀ> `sᴘᴏᴛɪғʏ_ᴀʟʙᴜᴍ_ɪᴍɢ_ᴜʀʟ` - ᴜsᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ<ʙʀ> `sᴘᴏᴛɪғʏ_ᴘʟᴀʏʟɪsᴛ_ɪᴍɢ_ᴜʀʟ` - ᴜsᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ
