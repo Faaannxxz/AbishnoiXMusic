@@ -1,13 +1,13 @@
 {
-    "name": "ᴀʙɪsʜɴᴏɪダᴍᴜsɪᴄ",
-    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://telegra.ph/file/56d1760224589ee370186.jpg",
+    "name": "AbishnoiX Music Bot",
+    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
+    "logo": "https://telegra.ph/file/c0e014ff34f34d1056627.png",
     "keywords": [
     "python3",
     "telegram",
     "bot",
     "AbishnoiX",
-    "MusicBot",
+    "AbishnoiXMusicBot",
     "telegram-bot",
     "pyrogram"
     ],
@@ -25,63 +25,33 @@
       },
       "AUTO_LEAVING_ASSISTANT": {
         "description": "If you want your assistant to leave all chats automatically after some time.",
-        "value": "False",
-        "required": true
+        "value": "True",
+        "required": false
       },
       "BOT_TOKEN": {
-        "description": "A Bot's token from @Botfather",
+        "description": "A Bot's token from Botfather",
         "value": "",
-        "required": true
-      },
-      "DURATION_LIMIT_MIN": {
-        "description": "Maximum duration that your bot can play in minutes.",
-        "value": "900",
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use AbishnoiX's database for you.",
         "value": "",
-        "required": false
-      },
-      "AUTO_DOWNLOADS_CLEAR": {
-        "description": "Fill True if you want to automatically clear the downloaded files after playing.",
-        "value": "True",
         "required": true
       },
       "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
-        "value": "ᴀʙɪsʜɴᴏɪ ダ ᴍᴜsɪᴄ",
-        "required": false
-      },
-      "SPOTIFY_CLIENT_ID": {
-        "description": "Spotify Client Id",
+        "description": "A name for your Music Bot. Please don't use ascii characters",
         "value": "",
-        "required": false
-      },
-      "SPOTIFY_CLIENT_SECRET": {
-        "description": "Spotify client secret",
-        "value": "",
-        "required": false
+        "required": true
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "1452219013",
+        "value": "",
         "required": true
       },
       "STRING_SESSION": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
         "value": "",
         "required": true
-      },
-      "PING_IMG_URL": {
-        "description": "The pic which will be shown when you give the /ping cmd to the bot.",
-        "value": "",
-        "required": false
-      },
-      "START_IMG_URL": {
-        "description": "The pic which will be shown when you /start the bot in private.",
-        "value": "",
-        "required": false
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku account's API key",
@@ -94,25 +64,20 @@
         "required": false
       },
       "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
         "value": "",
         "required": true
       },
-      "SUPPORT_GROUP": {
-        "description": "Link of your support group ! Channel ki id mat daal dena bsdk.",
-        "value": "https://t.me/Abishnoigamer",
-        "required": false
+      "UPSTREAM_REPO": {
+        "description": "If you dont know this, Leave as it is",
+        "value": "https://github.com/KingAbishnoi/AbishnoiXMusic",
+        "required": true
       },
-      "SUPPORT_CHANNEL": {
-        "description": "Link of your telegram channel.",
-        "value": "https://t.me/Abishnoi_bots",
-        "required": false
-      },
-        "UPSTREAM_BRANCH": {
-            "description": "branch dal na bs*k.",
-             "value": "main",
-             "required": true
-       }
+      "UPSTREAM_BRANCH": {
+        "description": "Upstream Repo's Branch Name",
+        "value": "master",
+        "required": true
+      }
     },
     "buildpacks": [
           {
@@ -130,6 +95,5 @@
               "quantity": 1,
               "size": "free"
           }
-      },
-      "stack": "container"
+      }
   }

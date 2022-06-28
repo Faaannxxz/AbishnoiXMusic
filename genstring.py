@@ -1,3 +1,6 @@
+
+
+
 import asyncio
 
 from pyrogram import Client as c
@@ -13,7 +16,7 @@ i = c(":memory:", api_id=API_ID, api_hash=API_HASH)
 async def main():
     await i.start()
     ss = await i.export_session_string()
-    print("\nHERE IS YOUR PYROGRAM STRING SESSION, COPY IT, DON'T SHARE IT WITH YOUR GF !\n")
+    print("\nHERE IS YOUR STRING SESSION, COPY IT, DON'T SHARE!!\n")
     print(f"\n{ss}\n")
 
 
