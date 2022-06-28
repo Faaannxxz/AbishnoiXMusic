@@ -1,3 +1,5 @@
+
+
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE, adminlist
@@ -18,12 +20,12 @@ def PlayWrapper(command):
         if await is_maintenance() is False:
             if message.from_user.id not in SUDOERS:
                 return await message.reply_text(
-                    "» ʙᴏᴛ ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ғᴏʀ sᴏᴍᴇ ᴛɪᴍᴇ, ᴩʟᴇᴀsᴇ ᴠɪsɪᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ ᴛᴏ ᴋɴᴏᴡ ᴛʜᴇ ʀᴇᴀsᴏɴ..."
+                    "Bot is under maintenance. Please wait for some time..."
                 )
         if PRIVATE_BOT_MODE == str(True):
             if not await is_served_private_chat(message.chat.id):
                 await message.reply_text(
-                    "**ᴩʀɪᴠᴀᴛᴇ ᴍᴜsɪᴄ ʙᴏᴛ**\n\nᴏɴʟʏ ғᴏʀ ᴛʜᴇ ᴄʜᴀᴛs ᴀᴜᴛʜᴏʀɪsᴇᴅ ʙʏ ᴛʜᴇ ᴏᴡɴᴇʀ. ʀᴇǫᴜᴇsᴛ ɪɴ ᴍʏ ᴏᴡɴᴇʀ's ᴩᴍ ᴛᴏ ᴀᴜᴛʜᴏʀɪsᴇ ʏᴏᴜʀ ᴄʜᴀᴛ ғᴏʀ ᴜsɪɴɢ ᴍᴇ."
+                    "**Private Music Bot**\n\nOnly for authorized chats from the owner. Ask my owner to allow your chat first."
                 )
                 return await app.leave_chat(message.chat.id)
         if await is_commanddelete_on(message.chat.id):
@@ -69,7 +71,7 @@ def PlayWrapper(command):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ʜᴏᴡ ᴛᴏ ғɪx ᴛʜɪs ?",
+                            text="How to Fix this? ",
                             callback_data="AnonymousAdmin",
                         ),
                     ]
