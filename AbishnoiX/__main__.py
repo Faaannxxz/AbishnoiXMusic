@@ -1,3 +1,5 @@
+
+
 import asyncio
 import importlib
 import sys
@@ -8,7 +10,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from AbishnoiX import LOGGER, app, userbot
-from AbishnoiX.core.call import Anon
+from AbishnoiX.core.call import AbishnoiX
 from AbishnoiX.plugins import ALL_MODULES
 from AbishnoiX.utils.database import get_banned_users, get_gbanned
 
@@ -24,7 +26,7 @@ async def init():
         and not config.STRING5
     ):
         LOGGER("AbishnoiX").error(
-            "WTF Baby ! Atleast add a pyrogram string, How Cheap..."
+            "No Assistant Clients Vars Defined!.. Exiting Process."
         )
         return
     if (
@@ -32,7 +34,7 @@ async def init():
         and not config.SPOTIFY_CLIENT_SECRET
     ):
         LOGGER("AbishnoiX").warning(
-            "Spotify Client Id & Secret not added, Chutiya Saala ek itni simple cheej nahi laa paaya."
+            "No Spotify Vars defined. Your bot won't be able to play spotify queries."
         )
     try:
         users = await get_gbanned()
@@ -47,26 +49,26 @@ async def init():
     for all_module in ALL_MODULES:
         importlib.import_module("AbishnoiX.plugins" + all_module)
     LOGGER("AbishnoiX.plugins").info(
-        "Necessary Modules Imported Successfully."
+        "Successfully Imported Modules "
     )
     await userbot.start()
-    await Anon.start()
+    await AbishnoiX.start()
     try:
-        await Anon.stream_call(
-            "https://telegra.ph/file/efe4c124caa993089a1ee.mp4"
+        await AbishnoiX.stream_call(
+            "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
         LOGGER("AbishnoiX").error(
-            "[ERROR] - \n\nHey Baby, firstly open telegram and turn on voice chat in Logger Group else fu*k off. If you ever ended voice chat in log group i will stop working and users will fu*k you up."
+            "[ERROR] - \n\nPlease turn on your Logger Group's Voice Call. Make sure you never close/end voice call in your log group"
         )
         sys.exit()
     except:
         pass
-    await Anon.decorators()
-    LOGGER("AbishnoiX").info("Music Bot Started Successfully, Now Gib your girlfriend chumt to @Abishnoi1M")
+    await AbishnoiX.decorators()
+    LOGGER("AbishnoiX").info("AbishnoiX Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("AbishnoiX").info("Stopping Music Bot, Bhakk Bhosdike (Gaand Maraa Tu)")
+    LOGGER("AbishnoiX").info("Stopping AbishnoiX Music Bot! GoodBye")

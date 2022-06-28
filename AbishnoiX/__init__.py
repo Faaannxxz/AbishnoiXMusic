@@ -1,9 +1,10 @@
+
+
 from AbishnoiX.core.bot import AbishnoiXBot
 from AbishnoiX.core.dir import dirr
 from AbishnoiX.core.git import git
 from AbishnoiX.core.userbot import Userbot
 from AbishnoiX.misc import dbb, heroku, sudo
-from aiohttp import ClientSession
 
 from .logging import LOGGER
 
@@ -37,5 +38,3 @@ Apple = AppleAPI()
 Resso = RessoAPI()
 SoundCloud = SoundAPI()
 Telegram = TeleAPI()
-
-aiohttpsession = ClientSession()
