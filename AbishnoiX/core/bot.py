@@ -1,3 +1,5 @@
+#AbishnoiXMusic 
+
 import sys
 
 from pyrogram import Client
@@ -7,12 +9,11 @@ import config
 from ..logging import LOGGER
 
 
-
 class AbishnoiXBot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Starting Bot...")
+        LOGGER(__name__).info(f"Starting Bot")
         super().__init__(
-            "AbishnoiXMusic",
+            "AbishnoiXBot",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
@@ -25,17 +26,17 @@ class AbishnoiXBot(Client):
         self.id = get_me.id
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "**» ᴀʙɪsʜɴᴏɪ ダᴍᴜsɪᴄ ʙᴏᴛ sᴛᴀʀᴛᴇᴅ...**"
+                config.LOG_GROUP_ID, "`ʙᴏᴛ sᴛᴀʀᴛᴇᴅ`"
             )
         except:
             LOGGER(__name__).error(
-                "Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!"
+                "ʙᴏᴛ ʜᴀs ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss ᴛʜᴇ ʟᴏɢ ɢʀᴏᴜᴘ. ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴅᴅᴇᴅ ʏᴏᴜʀ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ʟᴏɢ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇᴅ ᴀs ᴀᴅᴍɪɴ!"
             )
             sys.exit()
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != "administrator":
             LOGGER(__name__).error(
-                "Please promote Bot as Admin in Logger Group"
+                "ᴘʟᴇᴀsᴇ ᴘʀᴏᴍᴏᴛᴇ ʙᴏᴛ ᴀs ᴀᴅᴍɪɴ ɪɴ ʟᴏɢɢᴇʀ ɢʀᴏᴜᴘ"
             )
             sys.exit()
         if get_me.last_name:

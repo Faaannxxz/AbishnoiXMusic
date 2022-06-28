@@ -1,3 +1,4 @@
+
 from motor.motor_asyncio import AsyncIOMotorClient as _mongo_client_
 from pymongo import MongoClient
 from pyrogram import Client
@@ -6,12 +7,12 @@ import config
 
 from ..logging import LOGGER
 
-TEMP_MONGODB = "mongodb+srv://anonxmusic:anonxmusic@anonx.9v4i8.mongodb.net/?retryWrites=true&w=majority"
+TEMP_MONGODB = "mongodb+srv://shikhar:shikhar@cluster0.6xzlh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 
 if config.MONGO_DB_URI is None:
     LOGGER(__name__).warning(
-        "Your bot will work on @Abishnoi1Mt mongo database..."
+        "No MONGO DB URL found.. Your Bot will work on AbishnoiX's Database"
     )
     temp_client = Client(
         "AbishnoiX",
@@ -30,5 +31,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.Anon
-    pymongodb = _mongo_sync_.Anon
+    mongodb = _mongo_async_.AbishnoiX
+    pymongodb = _mongo_sync_.AbishnoiX
