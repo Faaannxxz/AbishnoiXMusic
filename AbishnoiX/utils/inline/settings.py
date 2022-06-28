@@ -1,31 +1,37 @@
+
+
 from typing import Union
 
 from pyrogram.types import InlineKeyboardButton
-from config import SUPPORT_GROUP
 
 
 def setting_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴜᴅɪᴏ ǫᴜᴀʟɪᴛʏ", callback_data="AQ"
+                text=_["ST_B_1"], callback_data="AQ"
             ),
             InlineKeyboardButton(
-                text="ᴠɪᴅᴇᴏ ǫᴜᴀʟɪᴛʏ", callback_data="VQ"
+                text=_["ST_B_2"], callback_data="VQ"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="ᴀᴜᴛʜ ᴜsᴇʀs", callback_data="AU"
+                text=_["ST_B_3"], callback_data="AU"
             ),
             InlineKeyboardButton(
-                text="ᴄʟᴇᴀɴ ᴍᴏᴅᴇ", callback_data="CM"
+                text=_["ST_B_6"], callback_data="LG"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="• sᴜᴩᴩᴏʀᴛ •", url=f"{SUPPORT_GROUP}",
+                text=_["ST_B_5"], callback_data="PM"
             ),
+            InlineKeyboardButton(
+                text=_["ST_B_7"], callback_data="CM"
+            ),
+        ],
+        [
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"], callback_data="close"
             ),
@@ -43,7 +49,7 @@ def audio_quality_markup(
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["ST_B_8"].format("➻")
+                text=_["ST_B_8"].format("✅")
                 if low == True
                 else _["ST_B_8"].format(""),
                 callback_data="LQA",
@@ -51,7 +57,7 @@ def audio_quality_markup(
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_9"].format("➻")
+                text=_["ST_B_9"].format("✅")
                 if medium == True
                 else _["ST_B_9"].format(""),
                 callback_data="MQA",
@@ -59,7 +65,7 @@ def audio_quality_markup(
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_10"].format("➻")
+                text=_["ST_B_10"].format("✅")
                 if high == True
                 else _["ST_B_10"].format(""),
                 callback_data="HQA",
@@ -87,7 +93,7 @@ def video_quality_markup(
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["ST_B_11"].format("➻")
+                text=_["ST_B_11"].format("✅")
                 if low == True
                 else _["ST_B_11"].format(""),
                 callback_data="LQV",
@@ -95,7 +101,7 @@ def video_quality_markup(
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_12"].format("➻")
+                text=_["ST_B_12"].format("✅")
                 if medium == True
                 else _["ST_B_12"].format(""),
                 callback_data="MQV",
@@ -103,7 +109,7 @@ def video_quality_markup(
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_13"].format("➻")
+                text=_["ST_B_13"].format("✅")
                 if high == True
                 else _["ST_B_13"].format(""),
                 callback_data="HQV",
@@ -145,6 +151,15 @@ def cleanmode_settings_markup(
             InlineKeyboardButton(
                 text=_["ST_B_14"] if dels == True else _["ST_B_15"],
                 callback_data="COMMANDELMODE",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["ST_B_27"], callback_data="SUGGANSWER"
+            ),
+            InlineKeyboardButton(
+                text=_["ST_B_14"] if sug == True else _["ST_B_15"],
+                callback_data="SUGGESTIONCHANGE",
             ),
         ],
         [

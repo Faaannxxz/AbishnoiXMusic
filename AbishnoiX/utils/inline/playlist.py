@@ -1,3 +1,5 @@
+
+
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
@@ -5,14 +7,17 @@ def botplaylist_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴩᴇʀsᴏɴᴀʟ",
+                text=_["PL_B_1"],
                 callback_data="get_playlist_playmode",
             ),
             InlineKeyboardButton(
-                text="ᴛᴏᴘ 10", callback_data="get_top_playlists"
+                text=_["PL_B_8"], callback_data="get_top_playlists"
             ),
         ],
         [
+            InlineKeyboardButton(
+                text=_["PL_B_4"], callback_data="PM"
+            ),
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"], callback_data="close"
             ),
@@ -25,17 +30,17 @@ def top_play_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ɢʟᴏʙᴀʟ ᴛᴏᴘ 10", callback_data="SERVERTOP global"
+                text=_["PL_B_9"], callback_data="SERVERTOP global"
             )
         ],
         [
             InlineKeyboardButton(
-                text="ɢʀᴏᴜᴘ's ᴛᴏᴘ 10", callback_data="SERVERTOP chat"
+                text=_["PL_B_10"], callback_data="SERVERTOP chat"
             )
         ],
         [
             InlineKeyboardButton(
-                text="ᴘᴇʀsᴏɴᴀʟ ᴛᴏᴘ 10", callback_data="SERVERTOP user"
+                text=_["PL_B_11"], callback_data="SERVERTOP user"
             )
         ],
         [
@@ -76,17 +81,17 @@ def top_play_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ɢʟᴏʙᴀʟ ᴛᴏᴘ 10", callback_data="SERVERTOP Global"
+                text=_["PL_B_9"], callback_data="SERVERTOP Global"
             )
         ],
         [
             InlineKeyboardButton(
-                text="ɢʀᴏᴜᴘ's ᴛᴏᴘ 10", callback_data="SERVERTOP Group"
+                text=_["PL_B_10"], callback_data="SERVERTOP Group"
             )
         ],
         [
             InlineKeyboardButton(
-                text="ᴘᴇʀsᴏɴᴀʟ ᴛᴏᴘ 10", callback_data="SERVERTOP Personal"
+                text=_["PL_B_11"], callback_data="SERVERTOP Personal"
             )
         ],
         [
