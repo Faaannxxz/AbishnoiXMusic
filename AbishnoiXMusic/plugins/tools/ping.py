@@ -8,7 +8,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from strings import get_command
 from AbishnoiXMusic import app
-from AbishnoiXMusic.core.call import Yukki
+from AbishnoiXMusic.core.call import AbishnoiX 
 from AbishnoiXMusic.utils import bot_sys_stats
 from AbishnoiXMusic.utils.decorators.language import language
 
