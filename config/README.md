@@ -90,7 +90,7 @@ Config vars are basically the variables which configure or modify bot to functio
 ## Images/Thumbnail Vars
 
 - You can change images which are used in AbishnoiX Music Bot.
-- You can generate telegaph links from [@AbishnoiXTelegraphBot](http://t.me/AbishnoiXTelegraphBot) and use it here.
+- You can generate telegaph links from [@Abishnoi_ro_bot](http://t.me/Abishnoi_ro_bot) and use it here.
 
 1. `START_IMG_URL` : Image which comes on /start command in private messages of bot.
 2. `PING_IMG_URL` : Image which comes on /ping command of bot.
