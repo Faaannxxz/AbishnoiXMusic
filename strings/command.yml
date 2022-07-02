@@ -5,8 +5,8 @@
 
 # Bot Commands
 PING_COMMAND : ["ping"]
-START_COMMAND : ["mstart"]
-HELP_COMMAND : ["mhelp"]
+START_COMMAND : ["mstart"] # you can set start
+HELP_COMMAND : ["mhelp"]   # you can set help
 SETTINGS_COMMAND : ["settings", "setting"]
 RELOAD_COMMAND : ["admincache", "reload"]
 GSTATS_COMMAND : ["gstats"]
@@ -36,8 +36,8 @@ UNAUTH_COMMAND : ["unauth"]
 AUTHUSERS_COMMAND : ["authusers"]
 PAUSE_COMMAND : ["pause", "cpause"]
 RESUME_COMMAND : ["resume", "cresume"]
-MUTE_COMMAND : ["amute", "cmute"]
-UNMUTE_COMMAND : ["aunmute", "cunmute"]
+MUTE_COMMAND : ["amute", "cmute"] # set  mute 
+UNMUTE_COMMAND : ["aunmute", "cunmute"] # set unmute
 STOP_COMMAND : ["stop", "end", "cstop", "cend"]
 SKIP_COMMAND : ["skip", "cskip"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
