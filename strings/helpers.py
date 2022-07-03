@@ -6,8 +6,8 @@ HELP_1 = """✅**<u>Admin Commands:</u>**
 
 /pause or /cpause - Pause the playing music.
 /resume or /cresume- Resume the paused music.
-/mute or /cmute- Mute the playing music.
-/unmute or /cunmute- Unmute the muted music.
+/amute or /cmute- Mute the playing music.
+/aunmute or /cunmute- Unmute the muted music.
 /skip or /cskip- Skip the current playing music.
 /stop or /cstop- Stop the playing music.
 /shuffle or /cshuffle- Randomly shuffles the queued playlist.
