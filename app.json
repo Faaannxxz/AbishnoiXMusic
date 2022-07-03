@@ -69,12 +69,12 @@
         "required": true
       },
       "UPSTREAM_REPO": {
-        "description": "If you dont know this, Leave as it is",
+        "description": " Leave as it is",
         "value": "https://github.com/KingAbishnoi/AbishnoiXMusic",
         "required": true
       },
       "UPSTREAM_BRANCH": {
-        "description": "Upstream Repo's Branch Name",
+        "description": "Upstream Repo's Branch Name (Don't Change) ",
         "value": "Abishnoi",
         "required": true
       }
