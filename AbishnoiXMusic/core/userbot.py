@@ -58,7 +58,7 @@ class Userbot(Client):
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "»  `ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ  sᴛᴀʀᴛᴇᴅ`.\n\n❄**ɴᴀᴍᴇ**: {self.one.name}\n💫 **ᴜsᴇʀɴᴀᴍᴇ :** @{self.one.username}\n✨ **ɪᴅ :** {self.one.id} "
+                    config.LOG_GROUP_ID, "**» ダ  ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ  sᴛᴀʀᴛᴇᴅ.\n\n❄ ɴᴀᴍᴇ :**{self.one.name}\n💫 **ᴜsᴇʀɴᴀᴍᴇ :** @{self.one.username}\n✨ **ɪᴅ :** {self.one.id}"
                 )
             except:
                 LOGGER(__name__).error(
