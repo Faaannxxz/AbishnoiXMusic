@@ -147,9 +147,9 @@ async def gen_thumb(videoid):
             image2 = image2.convert('RGB')
             image2.save(f"cache/{videoid}.jpg")
             file = f"cache/{videoid}.jpg"
-            #os.remove(file)
 
             return file
+            os.remove(file)
     except Exception as e:
         print(e)
         return "YOUTUBE_IMG_URL"
